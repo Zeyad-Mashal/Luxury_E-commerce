@@ -114,9 +114,11 @@
   padding: 0 1rem;
 }
 .hero_text h2 {
-  font-size: 2.5rem;
+  font-size: 4rem;
   color: goldenrod;
   margin-bottom: 1rem;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
 }
 .hero_text p {
   /* color: #aaa; */
@@ -168,6 +170,15 @@
 .hero_text button {
   animation: fadeInUp 1s ease forwards;
   animation-delay: 2s;
+}
+
+@media screen and (max-width: 589px) {
+  .hero_text h2 {
+    font-size: 2.5rem;
+  }
+  .hero_text p {
+    font-size: 1rem;
+  }
 }
 
 /* products */
