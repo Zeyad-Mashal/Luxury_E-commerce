@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Shop</title>
-    <link rel="stylesheet" href="./CSS/shop.css" />
+    <title>Your Fav</title>
+    <link rel="stylesheet" href="./CSS/fav.css" />
     <link rel="stylesheet" href="./CSS/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="bg-black" id="navbar">
@@ -174,38 +178,61 @@
       </div>
     </nav>
 
-    <div class="shop">
-      <h1>Luxury Shop</h1>
-      <p>
-        Welcome to our luxury shop! Explore our exclusive collection of high-end
-        products.
-      </p>
-      <div class="shop_container">
-        <div class="shop_list">
-          <div class="shop_item product-card">
-            <div class="card-image">
-              <img
-                src="./assets/p1.webp"
-                alt="Luxury Product"
-                class="main-image"
-              />
-
-              <!-- Second Image (On Hover) -->
-              <img
-                src="./assets/p2.webp"
-                alt="Luxury Product"
-                class="hover-image"
-              />
+    <div class="fav">
+      <h2>Your Favourite</h2>
+      <p>Take A look at your Luxury Products.</p>
+      <div class="fav_container">
+        <div class="fav_list">
+          <div class="fav_item">
+            <img src="./assets/p2.webp" alt="" />
+            <div class="item_content">
+              <div class="fav_content">
+                <h3>product Title</h3>
+                <span>50,000 EGP</span>
+              </div>
+              <div class="fav_icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+              </div>
             </div>
-            <div class="card-content">
-              <h3>Luxury Watch</h3>
-              <p>Elegance crafted with precision.</p>
-              <button
-                class="buy-btn"
-                onclick="window.location.href='./Prodcut.html'"
-              >
-                Buy Now
-              </button>
+          </div>
+          <div class="fav_item">
+            <img src="./assets/p2.webp" alt="" />
+            <div class="item_content">
+              <div class="fav_content">
+                <h3>product Title</h3>
+                <span>50,000 EGP</span>
+              </div>
+              <div class="fav_icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fav_item">
+            <img src="./assets/p2.webp" alt="" />
+            <div class="item_content">
+              <div class="fav_content">
+                <h3>product Title</h3>
+                <span>50,000 EGP</span>
+              </div>
+              <div class="fav_icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+              </div>
+            </div>
+          </div>
+          <div class="fav_item">
+            <img src="./assets/p2.webp" alt="" />
+            <div class="item_content">
+              <div class="fav_content">
+                <h3>product Title</h3>
+                <span>50,000 EGP</span>
+              </div>
+              <div class="fav_icon">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-solid fa-basket-shopping"></i>
+              </div>
             </div>
           </div>
         </div>
@@ -397,11 +424,11 @@
       </footer>
     </div>
 
-    <script src="./JS/app.js"></script>
     <script
       src="https://kit.fontawesome.com/9efa984a6f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./JS/app.js"></script>
     <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
   </body>
 </html>

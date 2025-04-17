@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/all.min.css" />
+    <link rel="stylesheet" href="./CSS/account.css" />
+  </head>
+  <body>
+    <div class="account-container">
+      <header class="account-header">
+        <div class="user-icon">
+          <i class="fas fa-user-circle"></i>
+        </div>
+        <div class="logo">
+          <h1>Luxury</h1>
+        </div>
+      </header>
+
+      <div class="account-content">
+        <nav class="account-menu">
+          <div class="menu-item active" data-section="orders">
+            <i class="fas fa-shopping-bag"></i>
+            <span>My Orders</span>
+          </div>
+          <div class="menu-item" data-section="info">
+            <i class="fas fa-user"></i>
+            <span>Account Information</span>
+          </div>
+          <div class="menu-item" data-section="favorites">
+            <i class="fas fa-heart"></i>
+            <span>My Favorites</span>
+          </div>
+        </nav>
+
+        <main class="account-main">
+          <section id="orders-section" class="account-section active">
+            <h2>My Orders</h2>
+            <div class="orders-list">
+              <div class="order-card">
+                <div class="order-header">
+                  <span class="order-id">Order #1</span>
+                  <span class="order-date">15 April 2025</span>
+                  <span class="order-status delivered">Delivered</span>
+                </div>
+                <div class="order-details">
+                  <img src="./assets/neckless.jpg" alt="Necklace" />
+                  <div class="order-info">
+                    <h3>Necklace</h3>
+                    <p>Quantity: 1</p>
+                    <p>Price: 25,000 EGP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-card">
+                <div class="order-header">
+                  <span class="order-id">Order #1</span>
+                  <span class="order-date">15 April 2025</span>
+                  <span class="order-status delivered">Delivered</span>
+                </div>
+                <div class="order-details">
+                  <img src="./assets/neckless.jpg" alt="Necklace" />
+                  <div class="order-info">
+                    <h3>Necklace</h3>
+                    <p>Quantity: 1</p>
+                    <p>Price: 25,000 EGP</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="order-card">
+                <div class="order-header">
+                  <span class="order-id">Order #1</span>
+                  <span class="order-date">15 April 2025</span>
+                  <span class="order-status delivered">Delivered</span>
+                </div>
+                <div class="order-details">
+                  <img src="./assets/neckless.jpg" alt="Necklace" />
+                  <div class="order-info">
+                    <h3>Necklace</h3>
+                    <p>Quantity: 1</p>
+                    <p>Price: 25,000 EGP</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="info-section" class="account-section">
+            <h2>Account Information</h2>
+            <form class="account-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" value="Menna Gebril" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  value="mennagebril979@gmail.com"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" value="0123456789" />
+              </div>
+              <div class="form-group">
+                <label for="address">Address</label>
+                <textarea id="address">Sidi Bisher, Alex, Egypt</textarea>
+              </div>
+              <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+          </section>
+
+          <section id="favorites-section" class="account-section">
+            <h2>My Favorites</h2>
+            <p>Go to favorites page...</p>
+          </section>
+          <a href="./index.html" class="homePage">go back to home</a>
+        </main>
+      </div>
+    </div>
+
+    <script src="./JS/account.js"></script>
+  </body>
+</html>

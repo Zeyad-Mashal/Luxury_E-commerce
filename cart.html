@@ -3,17 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Shop</title>
-    <link rel="stylesheet" href="./CSS/shop.css" />
-    <link rel="stylesheet" href="./CSS/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <title>Your Cart</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Qwitcher+Grypen:wght@400;700&family=Scheherazade+New:wght@400;500;600;700&display=swap"
+      href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/cart.css" />
   </head>
+
   <body>
     <nav class="bg-black" id="navbar">
       <div
@@ -46,7 +45,10 @@
 
           <!-- search -->
           <i class="fa-solid fa-magnifying-glass text-white searchIcon"></i>
-          <i class="fa-solid fa-cart-shopping cartIcon"></i>
+          <i
+            class="fa-solid fa-cart-shopping cartIcon"
+            onclick="window.location.href='cart.html'"
+          ></i>
           <!-- search div -->
           <div class="searchContainer">
             <div class="search_logo">
@@ -174,40 +176,136 @@
       </div>
     </nav>
 
-    <div class="shop">
-      <h1>Luxury Shop</h1>
-      <p>
-        Welcome to our luxury shop! Explore our exclusive collection of high-end
-        products.
-      </p>
-      <div class="shop_container">
-        <div class="shop_list">
-          <div class="shop_item product-card">
-            <div class="card-image">
-              <img
-                src="./assets/p1.webp"
-                alt="Luxury Product"
-                class="main-image"
-              />
-
-              <!-- Second Image (On Hover) -->
-              <img
-                src="./assets/p2.webp"
-                alt="Luxury Product"
-                class="hover-image"
-              />
-            </div>
-            <div class="card-content">
-              <h3>Luxury Watch</h3>
-              <p>Elegance crafted with precision.</p>
-              <button
-                class="buy-btn"
-                onclick="window.location.href='./Prodcut.html'"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
+    <div class="cart">
+      <div class="cart_container">
+        <div class="cart_titles">
+          <h1>Your Cart</h1>
+          <button>Buy Now</button>
+        </div>
+        <div class="table_container">
+          <table>
+            <thead>
+              <tr>
+                <th>Product Details</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+              </tr>
+            </thead>
+            <tbody id="cart-body">
+              <tr>
+                <td class="product-info">
+                  <img
+                    src="./assets/p1.webp"
+                    class="product-img"
+                    alt="Product"
+                  />
+                  <span>Sample Product</span>
+                </td>
+                <td class="price" data-price="50000">50,000 EGP</td>
+                <td>
+                  <div class="counter">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </td>
+                <td class="total">50,000 EGP</td>
+                <td>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img
+                    src="./assets/p1.webp"
+                    class="product-img"
+                    alt="Product"
+                  />
+                  <span>Sample Product</span>
+                </td>
+                <td class="price" data-price="50000">50,000 EGP</td>
+                <td>
+                  <div class="counter">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </td>
+                <td class="total">50,000 EGP</td>
+                <td>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img
+                    src="./assets/p1.webp"
+                    class="product-img"
+                    alt="Product"
+                  />
+                  <span>Sample Product</span>
+                </td>
+                <td class="price" data-price="50000">50,000 EGP</td>
+                <td>
+                  <div class="counter">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </td>
+                <td class="total">50,000 EGP</td>
+                <td>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img
+                    src="./assets/p1.webp"
+                    class="product-img"
+                    alt="Product"
+                  />
+                  <span>Sample Product</span>
+                </td>
+                <td class="price" data-price="50000">50,000 EGP</td>
+                <td>
+                  <div class="counter">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </td>
+                <td class="total">50,000 EGP</td>
+                <td>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+              <tr>
+                <td class="product-info">
+                  <img
+                    src="./assets/p1.webp"
+                    class="product-img"
+                    alt="Product"
+                  />
+                  <span>Sample Product</span>
+                </td>
+                <td class="price" data-price="50000">50,000 EGP</td>
+                <td>
+                  <div class="counter">
+                    <button class="decrease">−</button>
+                    <span class="quantity">1</span>
+                    <button class="increase">+</button>
+                  </div>
+                </td>
+                <td class="total">50,000 EGP</td>
+                <td>
+                  <button class="remove-btn">Remove</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -397,11 +495,11 @@
       </footer>
     </div>
 
-    <script src="./JS/app.js"></script>
     <script
       src="https://kit.fontawesome.com/9efa984a6f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="./JS/cart.js"></script>
   </body>
 </html>

@@ -3,16 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luxury Shop</title>
-    <link rel="stylesheet" href="./CSS/shop.css" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="./CSS/about.css" />
     <link rel="stylesheet" href="./CSS/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
-      href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Qwitcher+Grypen:wght@400;700&family=Scheherazade+New:wght@400;500;600;700&display=swap"
+      href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css"
       rel="stylesheet"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav class="bg-black" id="navbar">
@@ -174,40 +172,50 @@
       </div>
     </nav>
 
-    <div class="shop">
-      <h1>Luxury Shop</h1>
-      <p>
-        Welcome to our luxury shop! Explore our exclusive collection of high-end
-        products.
-      </p>
-      <div class="shop_container">
-        <div class="shop_list">
-          <div class="shop_item product-card">
-            <div class="card-image">
-              <img
-                src="./assets/p1.webp"
-                alt="Luxury Product"
-                class="main-image"
-              />
+    <div class="container">
+      <div class="left">
+        <h1>ABOUT US</h1>
+        <p class="desc">
+          At luxury , we believe that accessories are more than just finishing
+          touches — they’re a reflection of who you are. Our pieces are
+          thoughtfully designed to blend timeless elegance with modern style,
+          helping you express your individuality with confidence. Whether it’s a
+          delicate necklace, a bold ring, or a statement earring, every item in
+          our collection is crafted to empower and inspire. Born from a passion
+          for detail and a love for subtle beauty, our brand stands for quality,
+          authenticity, and effortless charm.
+        </p>
+      </div>
+      <div class="right">
+        <div class="hero-image">
+          <img src="./assets/model.jpg" alt="Large Product" />
+        </div>
+      </div>
+    </div>
 
-              <!-- Second Image (On Hover) -->
-              <img
-                src="./assets/p2.webp"
-                alt="Luxury Product"
-                class="hover-image"
-              />
-            </div>
-            <div class="card-content">
-              <h3>Luxury Watch</h3>
-              <p>Elegance crafted with precision.</p>
-              <button
-                class="buy-btn"
-                onclick="window.location.href='./Prodcut.html'"
-              >
-                Buy Now
-              </button>
-            </div>
-          </div>
+    <!-- قسم Our Team -->
+    <h1 class="section-title">Our Team</h1>
+    <div class="slider-container">
+      <div class="card-slider" id="slider">
+        <div class="card">
+          <img src="./assets/man.jpg" alt="Person 1" />
+          <h2>Zayed Mashaal</h2>
+        </div>
+        <div class="card">
+          <img src="./assets/woman.jpg" alt="Person 2" />
+          <h2>Mariem Tarek</h2>
+        </div>
+        <div class="card">
+          <img src="./assets/man.jpg" alt="Person 3" />
+          <h2>Mohamed Alaa</h2>
+        </div>
+        <div class="card">
+          <img src="./assets/woman.jpg" alt="Person 4" />
+          <h2>Mariem Mohamed</h2>
+        </div>
+        <div class="card">
+          <img src="./assets/woman.jpg" alt="Person 4" />
+          <h2>Menna Gabriel</h2>
         </div>
       </div>
     </div>
@@ -397,11 +405,13 @@
       </footer>
     </div>
 
+    <script src="./JS/about.js"></script>
     <script src="./JS/app.js"></script>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+
     <script
       src="https://kit.fontawesome.com/9efa984a6f.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
   </body>
 </html>
