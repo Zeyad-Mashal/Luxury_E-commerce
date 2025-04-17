@@ -6,6 +6,14 @@ const handleSearch = () => {
     })
 }
 
+const token = localStorage.getItem("token");
+
+if (token) {
+    document.querySelector(".login").textContent = "LogOut";
+} else {
+    document.querySelector(".login").textContent = "Login";
+}
+
 document.addEventListener('DOMContentLoaded', () => {
     handleSearch();
 });

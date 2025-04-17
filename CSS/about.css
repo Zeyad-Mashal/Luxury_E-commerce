@@ -28,14 +28,14 @@ body {
 .desc {
   font-size: 23px;
   line-height: 1.6;
-  max-width: 400px;
+  max-width: 650px;
   animation: fadeIn 2s ease-in-out;
 }
 
 .hero-image img {
   width: 100%;
-  max-width: 1200px;
-  height: auto;
+  /* max-width: 1200px; */
+  height: 550px;
   border-radius: 10px;
   animation: fadeIn 2s ease-in-out;
 }

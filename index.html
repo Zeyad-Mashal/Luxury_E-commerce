@@ -27,54 +27,24 @@
   <body>
     <nav class="bg-black" id="navbar">
       <div
-        class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
+        class="max-w-screen-xl flex items-center justify-between p-4 mx-auto"
       >
-        <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <span
-            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
-            >Luxury</span
-          >
-        </a>
-        <div
-          class="flex items-center md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse lg:gap-4 md:gap-2"
-        >
-          <!-- search -->
-          <i class="fa-solid fa-magnifying-glass text-white searchIcon"></i>
-          <i
-            class="fa-solid fa-cart-shopping cartIcon"
-            onclick="window.location.href='cart.html'"
-          ></i>
-          <!-- search div -->
-          <div class="searchContainer">
-            <div class="search_logo">
-              <h1>Welcome in Luxury Search Engine</h1>
-            </div>
-            <div class="search_content">
-              <input type="text" class="searchInput" placeholder="Search..." />
-              <button
-                type="button"
-                class="lg:w-24 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-4 me-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
-              >
-                Dark
-              </button>
-            </div>
-          </div>
-          <!-- Dropdown menu -->
-          <a href="/login.html" class="text-white"> Sign In</a>
-        </div>
-        <div
-          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-          id="navbar-user"
-        >
-          <ul
-            class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-black md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-black md:dark:bg-black dark:bg-black"
-          >
+        <!-- Left links -->
+        <div class="flex space-x-4 rtl:space-x-reverse">
+          <ul class="flex space-x-4 rtl:space-x-reverse">
             <li>
               <a
                 href="./index.html"
                 class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
                 aria-current="page"
                 >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Register</a
               >
             </li>
             <li>
@@ -93,12 +63,68 @@
             </li>
             <li>
               <a
+                href="./categories.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a
                 href="./contact us.html"
                 class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >Contact</a
               >
             </li>
+            <li>
+              <a
+                href="./Prodcut.html"
+                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
+                >Prodcut</a
+              >
+            </li>
           </ul>
+        </div>
+
+        <!-- Centered Logo -->
+        <a
+          href="#"
+          class="flex items-center justify-center space-x-3 rtl:space-x-reverse absolute left-1/2 transform -translate-x-1/2"
+        >
+          <span
+            class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+          >
+            <i class="fa-solid fa-gem text-white"></i>
+            Luxury
+          </span>
+        </a>
+
+        <!-- Right icons (Cart, Search, etc.) -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <i class="fa-solid fa-magnifying-glass text-white searchIcon"></i>
+          <i
+            class="fa-solid fa-cart-shopping cartIcon"
+            onclick="window.location.href='cart.html'"
+          ></i>
+          <a href="./fav.html">
+            <i class="fa-solid fa-heart text-white"></i>
+          </a>
+          <a href="/login.html" class="text-white login"></a>
+        </div>
+
+        <!-- search div -->
+        <div class="searchContainer">
+          <div class="search_logo">
+            <h1>Welcome in Luxury Search Engine</h1>
+          </div>
+          <div class="search_content">
+            <input type="text" class="searchInput" placeholder="Search..." />
+            <button
+              type="button"
+              class="lg:w-24 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-4 me-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            >
+              Search
+            </button>
+          </div>
         </div>
       </div>
     </nav>
@@ -107,7 +133,7 @@
       <div class="hero_container">
         <div class="overlay"></div>
         <div class="hero_text">
-          <h2>Welcome In Luxury Website</h2>
+          <h2>Discover Our Unique Luxury Jewelry Collection</h2>
           <p>Here you can find the best luxury products</p>
           <button class="btn">Shop Now</button>
         </div>
@@ -393,7 +419,7 @@
       <div class="collection_container">
         <div class="collection_header">
           <h2>Our Collection</h2>
-          <a href="#">----->Shop All</a>
+          <a href="./categories.html">----->Shop All</a>
         </div>
         <div class="collection_list">
           <div class="collection_item">
@@ -401,16 +427,16 @@
             <p>Rings</p>
           </div>
           <div class="collection_item">
-            <img src="./assets/rings.webp" alt="" />
-            <p>Rings</p>
+            <img src="./assets/Necklaces.jpg" alt="" />
+            <p>Necklaces</p>
           </div>
           <div class="collection_item">
-            <img src="./assets/rings.webp" alt="" />
-            <p>Rings</p>
+            <img src="./assets/ear.jpg" alt="" />
+            <p>Earring</p>
           </div>
           <div class="collection_item">
-            <img src="./assets/rings.webp" alt="" />
-            <p>Rings</p>
+            <img src="./assets/Bracelets.jpg" alt="" />
+            <p>Bracelets</p>
           </div>
         </div>
       </div>

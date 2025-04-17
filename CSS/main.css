@@ -116,7 +116,7 @@
 }
 .hero_text h2 {
   font-size: 4rem;
-  color: goldenrod;
+  color: #fff;
   margin-bottom: 1rem;
   font-family: "Qwitcher Grypen", cursive;
   font-weight: 700;
@@ -124,9 +124,10 @@
 .hero_text p {
   /* color: #aaa; */
   font-size: 1.2rem;
+  color: #eee;
 }
 .hero_text button {
-  background-color: goldenrod;
+  background-color: transparent;
   color: #fff;
   padding: 0.8rem;
   width: 150px;
@@ -136,6 +137,14 @@
   cursor: pointer;
   transition: all 0.3s ease;
   margin-top: 1rem;
+  border: 1px solid #fff;
+  border-radius: 16px;
+}
+.hero_text button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 /* Add to the bottom of your CSS */
 @keyframes fadeInUp {
@@ -372,6 +381,7 @@
   flex-direction: column;
   position: relative;
   cursor: pointer;
+  overflow: hidden;
 }
 .collection_item img {
   width: 100%;

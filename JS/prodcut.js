@@ -94,25 +94,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const favoritesLink = document.getElementById('favoritesLink');
     const cartLink = document.getElementById('cartLink');
 
-    favoritesLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        toastMessage.textContent = 'My Favorites page would open here';
-        toast.classList.add('show');
-
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3000);
-    });
-
-    cartLink.addEventListener('click', function (e) {
-        e.preventDefault();
-        toastMessage.textContent = 'Shopping Cart page would open here';
-        toast.classList.add('show');
-
-        setTimeout(() => {
-            toast.classList.remove('show');
-        }, 3000);
-    });
 
     // Apply animations on page load
     const animatedElements = document.querySelectorAll('.animate-fade-in');
@@ -131,9 +112,9 @@ addToCartButton.addEventListener('click', () => {
     const product = {
         id: '1', // Unique ID for the product
         name: 'Product 1',
-        price: 50, // Price in EGP
+        price: 48000, // Price in EGP
         quantity: 1, // Initial quantity
-        image: './assets/p1.webp', // Product image URL
+        image: './assets/neckless.jpg', // Product image URL
     };
 
     // Get the cart from localStorage, or initialize it as an empty array

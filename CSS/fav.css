@@ -86,8 +86,10 @@
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 }
-.fav_icon i:first-child:hover {
+.fav_icon i:first-child {
   color: #8a0303;
+}
+.fav_icon i:first-child:hover {
   transform: scale(1.2);
 }
 .fav_icon i:last-child:hover {
