@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luxury Jewelry Shop</title>
+    <link rel="stylesheet" href="./CSS/product.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="index.html" style="text-decoration: none; color: inherit;">
+          <i class="fas fa-gem"></i>
+          <span>Luxury Jewelry</span>
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="./fav.html" class="favorite-icon" id="favoritesLink">
+          <i class="fas fa-heart"></i>
+          <span>My Favorites</span>
+        </a>
+        <a href="./cart.html" class="cart-icon" id="cartLink">
+          <i class="fas fa-shopping-bag"></i>
+          <span>My Cart</span>
+          <div class="cart-counter" id="cartCounter">0</div>
+        </a>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <div class="product-container">
+        <div class="product-images animate-fade-in">
+          <div class="main-image">
+            <img
+              src="./assets/neckless.jpg"
+              alt="Eternity Diamond Necklace"
+              id="mainImage"
+            />
+          </div>
+          <div class="thumbnail-container">
+            <div class="thumbnail active" data-img="./assets/neckless.jpg">
+              <img src="./assets/neckless.jpg" alt="Main product view" />
+            </div>
+            <div class="thumbnail" data-img="./assets/p1.webp">
+              <img src="./assets/p1.webp" alt="Product angle view" />
+            </div>
+            <div class="thumbnail" data-img="./assets/p2.webp">
+              <img src="./assets/p2.webp" alt="Product detail view" />
+            </div>
+            <div
+              class="thumbnail"
+              data-img="./assets/58550272fc8642a36c74b6a64b28e059.jpg"
+            >
+              <img
+                src="./assets/58550272fc8642a36c74b6a64b28e059.jpg"
+                alt="Product packaging"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="product-info">
+          <h1 class="product-title animate-fade-in">
+            Eternity Diamond Necklace
+          </h1>
+
+          <div class="product-rating animate-fade-in animate-delay-1">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="reviews">5.0 (128 reviews)</span>
+          </div>
+
+          <span class="category animate-fade-in animate-delay-1"
+            >Necklaces</span
+          >
+
+          <div class="product-price animate-fade-in animate-delay-2">
+            <span>48,000 EGP</span>
+            <span class="original-price">60,000 EGP</span>
+            <span class="discount">20% OFF</span>
+          </div>
+
+          <p class="product-description animate-fade-in animate-delay-2">
+            Our Eternity Diamond Necklace features a stunning 1.5 carat round
+            brilliant cut diamond set in 18K white gold. The pendant hangs from
+            a delicate 18-inch chain, creating an elegant silhouette that
+            complements any outfit.
+          </p>
+
+          <div class="specs animate-fade-in animate-delay-3">
+            <div class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-ring"></i>
+              </div>
+              <div class="spec-info">
+                <h4>Material</h4>
+                <p>18K White Gold</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-ruler"></i>
+              </div>
+              <div class="spec-info">
+                <h4>Chain Length</h4>
+                <p>18 inches</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-weight"></i>
+              </div>
+              <div class="spec-info">
+                <h4>Diamond Weight</h4>
+                <p>1.5 carat</p>
+              </div>
+            </div>
+            <div class="spec-item">
+              <div class="spec-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <div class="spec-info">
+                <h4>Certification</h4>
+                <p>GIA Certified</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="variant-selection animate-fade-in animate-delay-3">
+            <h3 class="variant-title">Chain Length</h3>
+            <div class="variant-options">
+              <div class="option">16"</div>
+              <div class="option selected">18"</div>
+              <div class="option">20"</div>
+              <div class="option">22"</div>
+            </div>
+          </div>
+
+          <div class="actions animate-fade-in animate-delay-4">
+            <button class="btn btn-cart" id="addToCartBtn">
+              <i class="fas fa-shopping-bag"></i>
+              <span
+                class="add-to-cart"
+                data-id="1"
+                data-name="Product 1"
+                data-price="48,000"
+                >Add to Cart</span
+              >
+            </button>
+            <button class="btn btn-favorite" id="addToFavoritesBtn">
+              <i class="far fa-heart"></i>
+              <span>Add to Favorite</span>
+            </button>
+          </div>
+
+          <div class="shop-features animate-fade-in animate-delay-4">
+            <div class="feature">
+              <i class="fas fa-shield-alt"></i>
+              <span>Lifetime Warranty</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-truck"></i>
+              <span>Free Shipping & Returns</span>
+            </div>
+            <div class="feature">
+              <i class="fas fa-gift"></i>
+              <span>Gift Packaging Available</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="toast" id="toast">
+      <i class="fas fa-check-circle"></i>
+      <span id="toastMessage">Item added to your cart!</span>
+    </div>
+
+    <script src="./JS/prodcut.js"></script>
+  </body>
+</html>

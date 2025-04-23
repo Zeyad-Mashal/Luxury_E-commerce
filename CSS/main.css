@@ -1,0 +1,467 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+#navbar {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  z-index: 1000;
+}
+nav ul li a:hover {
+  color: #f39c12;
+}
+.searchContainer {
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 0px;
+  transition: height 0.5s ease;
+  overflow: hidden;
+  z-index: 999;
+  box-shadow: 4px 1px 5px #aaa;
+}
+.searchContainer.active {
+  height: 350px;
+  margin: 0;
+}
+.search_logo,
+.search_content {
+  width: 100%;
+  text-align: center;
+}
+.search_logo h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1rem;
+  margin: 10px;
+}
+.searchContainer input {
+  margin: 0;
+  padding: 0.8rem;
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  width: 80%;
+  z-index: 1;
+}
+.searchIcon,
+.cartIcon {
+  font-size: 1.2rem;
+  transition: 0.3s ease;
+  color: #fff;
+}
+.searchIcon:hover,
+.cartIcon:hover {
+  cursor: pointer;
+  color: #aaa;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 579px) {
+  .search_logo h1 {
+    font-size: 1.5rem;
+  }
+  .searchContainer input {
+    width: 70%;
+  }
+  .searchContainer {
+    left: -15px;
+  }
+}
+
+/* hero */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hero_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-image: url("../assets/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: fill;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* adjust darkness here */
+  z-index: 1;
+}
+
+.hero_text {
+  position: absolute;
+  color: #fff;
+  top: 30%;
+  font-weight: bold;
+  text-align: center;
+  z-index: 2;
+  padding: 0 1rem;
+}
+.hero_text h2 {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+}
+.hero_text p {
+  /* color: #aaa; */
+  font-size: 1.2rem;
+  color: #eee;
+}
+.hero_text button {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.8rem;
+  width: 150px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  border: 1px solid #fff;
+  border-radius: 16px;
+}
+.hero_text button:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+/* Add to the bottom of your CSS */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero_text h2,
+.hero_text p,
+.hero_text button {
+  opacity: 0; /* Start hidden */
+}
+
+/* Animate h2 */
+.hero_text h2 {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Animate p */
+.hero_text p {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 1.2s;
+}
+
+/* Animate button */
+.hero_text button {
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 2s;
+}
+
+@media screen and (max-width: 589px) {
+  .hero_text h2 {
+    font-size: 2.5rem;
+  }
+  .hero_text p {
+    font-size: 1rem;
+  }
+}
+
+/* products */
+.hot_products {
+  padding: 2rem;
+  text-align: center;
+}
+
+.hot_products h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: goldenrod;
+}
+
+.hot_products_container {
+  width: 90%;
+  margin: auto;
+}
+
+.swiper {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.swiper-slide {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  text-align: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.swiper-slide p {
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+
+/* Product Card */
+.product-card {
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  animation: fadeUp 0.8s ease forwards;
+  position: relative;
+}
+
+.product-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(218, 165, 32, 0.4);
+}
+
+/* Hide second image by default */
+.card-image img {
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.main-image {
+  display: block;
+}
+
+.hover-image {
+  display: none;
+  position: absolute;
+  top: 4%;
+  left: 12%;
+  opacity: 0;
+}
+
+/* On hover, show the second image and hide the first one */
+.product-card:hover .main-image {
+  opacity: 0;
+}
+
+.product-card:hover .hover-image {
+  display: block;
+  opacity: 1;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Content */
+.card-content {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  color: #000;
+  margin-bottom: 0.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.buy-btn {
+  padding: 0.6rem 1.2rem;
+  background-color: goldenrod;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.buy-btn:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+
+/* Image fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* collection */
+.collection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.collection_container {
+  width: 100%;
+  margin: 0 2rem;
+}
+.collection_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.collection_header h2 {
+  font-size: 2rem;
+  color: goldenrod;
+}
+.collection_header a:hover {
+  color: goldenrod;
+}
+.collection_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.collection_item {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+}
+.collection_item img {
+  width: 100%;
+}
+.collection_item p {
+  background-color: #bd9965;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding: 0.2rem 0;
+  font-size: 1.2rem;
+  height: 40px;
+  bottom: 0;
+  position: absolute;
+  transition: 0.3s ease;
+}
+.collection_item:hover p {
+  height: 250px;
+  background: rgba(189, 153, 101, 0.7);
+}
+.newsLetter {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsLetter_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  background-image: url("../assets/58550272fc8642a36c74b6a64b28e059.jpg");
+  height: 350px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.newsLetter_container h2 {
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+.newsLetter_container p {
+  font-size: 1.2rem;
+  color: #aaa;
+  text-align: center;
+}
+.newsLetter_container input {
+  padding: 0.8rem;
+  border-radius: 16px;
+  width: 80%;
+  outline: none;
+  font-size: 1rem;
+}
+.newsLetter_container button {
+  background-color: goldenrod;
+  color: #fff;
+  padding: 0.8rem;
+  width: 150px;
+  border-radius: 16px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.newsLetter_container button:hover {
+  background-color: #ffd700;
+  transform: scale(1.05);
+}
+@media screen and (max-width: 579px) {
+  .newsLetter_container p {
+    font-size: 1rem;
+  }
+  .newsLetter_container input {
+    width: 90%;
+  }
+}

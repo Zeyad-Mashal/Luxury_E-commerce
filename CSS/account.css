@@ -1,0 +1,284 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../assets/background.avif");
+  padding: 20px;
+}
+
+.account-container {
+  width: 100%;
+  max-width: 1000px;
+  background-color: #fff;
+  box-shadow: 0 0 20px #0000001a;
+  border-radius: 15px;
+}
+
+/* Header */
+.account-header {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.user-icon {
+  font-size: 40px;
+  color: #000;
+  margin: 0 20px;
+}
+
+.logo h1,
+.account-main .account-section h2 {
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
+  font-family: "Qwitcher Grypen", cursive;
+}
+
+.account-content {
+  display: flex;
+  min-height: 500px;
+}
+
+.account-menu {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 20px 0;
+  border-right: 1px solid #eee;
+}
+
+.menu-item {
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.menu-item:hover {
+  background-color: #eee;
+}
+
+.menu-item.active {
+  background-color: #eee;
+  border-left: 3px solid #ccc;
+  color: goldenrod;
+}
+
+.menu-item i {
+  margin: 0 15px;
+  font-size: 18px;
+}
+
+.account-main {
+  flex: 1;
+  padding: 30px;
+}
+
+.account-section {
+  display: none;
+  margin-bottom: 2rem;
+}
+
+.account-section.active {
+  display: block;
+}
+
+/* Orders */
+.orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.order-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.order-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.order-id {
+  font-weight: bold;
+  color: #333;
+}
+
+.order-date {
+  color: #666;
+}
+
+.order-status {
+  font-weight: bold;
+  padding: 3px 10px;
+  border-radius: 12px;
+  font-size: 14px;
+}
+
+.order-status.delivered {
+  background-color: #e6f7ee;
+  color: #4caf50;
+}
+
+.order-details {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-details img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.order-info h3 {
+  color: goldenrod;
+  margin-bottom: 10px;
+}
+
+.order-info p {
+  margin-bottom: 5px;
+  color: #555;
+  font-size: 16px;
+}
+
+/* Account Information */
+.account-form {
+  margin-top: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.form-group textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.save-btn {
+  background-color: goldenrod;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.save-btn:hover {
+  background-color: rgb(148, 114, 28);
+}
+
+/* Favorites */
+.link {
+  display: inline-block;
+  margin-top: 20px;
+  color: goldenrod;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .account-content {
+    flex-direction: column;
+  }
+
+  .account-menu {
+    width: 100%;
+  }
+
+  .menu-item.active {
+    width: 100%;
+  }
+
+  .menu-item:hover {
+    width: 100%;
+  }
+
+  .order-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-details img {
+    width: 100%;
+    height: auto;
+    max-height: 200px;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 15px;
+    height: auto;
+  }
+
+  .account-header {
+    padding: 15px;
+  }
+
+  .user-icon {
+    font-size: 32px;
+    margin: 0 15px 0 0;
+  }
+
+  .logo h1 {
+    font-size: 22px;
+  }
+}
+.homePage {
+  color: hsl(0, 0%, 0%);
+}

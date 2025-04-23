@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Account</title>
+    <link rel="stylesheet" href="./CSS/register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="animated-background"></div>
+
+    <div class="registration-container">
+      <div class="registration-card">
+        <h1 class="title-animated">Create Account</h1>
+
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          <p>Registration successful!</p>
+        </div>
+
+        <form id="registrationForm" class="registration-form">
+          <div class="form-group">
+            <label for="firstName" class="label-animated">First Name</label>
+            <input
+              type="text"
+              id="firstName"
+              name="firstName"
+              placeholder="Enter your first name"
+            />
+            <div class="error-message" id="firstNameError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Please enter your first name</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lastName" class="label-animated">Last Name</label>
+            <input
+              type="text"
+              id="lastName"
+              name="lastName"
+              placeholder="Enter your last name"
+            />
+            <div class="error-message" id="lastNameError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Please enter your last name</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="label-animated">Email</label>
+            <div class="input-with-icon">
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+              />
+              <i class="fas fa-envelope icon-large animated-icon"></i>
+            </div>
+            <div class="error-message" id="emailError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Please enter an E-mail</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="label-animated">Password</label>
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Create a password"
+              />
+              <i
+                class="fas fa-eye-slash toggle-password"
+                id="togglePassword"
+              ></i>
+              <i class="fas fa-lock icon-large"></i>
+            </div>
+            <div class="password-strength">
+              <div class="strength-meter" id="strengthMeter"></div>
+              <span class="strength-text" id="strengthText">Weak</span>
+            </div>
+            <div class="error-message" id="passwordError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Password must be at least 8 characters</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="confirmPassword" class="label-animated"
+              >Repeat Password</label
+            >
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="confirmPassword"
+                name="confirmPassword"
+                placeholder="Repeat your password"
+              />
+              <i
+                class="fas fa-eye-slash toggle-password"
+                id="toggleConfirmPassword"
+              ></i>
+              <i class="fas fa-lock icon-large"></i>
+            </div>
+            <div class="error-message" id="confirmPasswordError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Passwords don't match</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="country" class="label-animated">Country</label>
+            <div class="custom-select">
+              <select id="country" name="country">
+                <option value="" disabled selected>Select your country</option>
+              </select>
+              <span class="select-arrow"
+                ><i class="fas fa-chevron-down"></i
+              ></span>
+            </div>
+            <div class="error-message" id="countryError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Please select your country</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="address" class="label-animated">Address</label>
+            <input
+              type="text"
+              id="address"
+              name="address"
+              placeholder="Enter your address"
+            />
+            <div class="error-message" id="addressError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Please enter your address</span>
+            </div>
+          </div>
+
+          <button type="submit" class="submit-btn">
+            <span>Register</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="login-link">
+          Already have an account?
+          <a href="./login.html">Log In</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./JS/register.js"></script>
+  </body>
+</html>

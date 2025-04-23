@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jewelry Categories</title>
+    <link rel="stylesheet" href="./CSS/categories.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/9efa984a6f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="bg-black" id="navbar">
+      <div
+        class="max-w-screen-xl flex items-center justify-between p-4 mx-auto"
+      >
+        <!-- Left links -->
+        <div class="flex space-x-4 rtl:space-x-reverse">
+          <ul class="flex space-x-4 rtl:space-x-reverse">
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Register</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./account.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Account</a
+              >
+            </li>
+            <li>
+              <a
+                href="./categories.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact us.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- Centered Logo -->
+        <a
+          href="./index.html"
+          class="flex items-center justify-center space-x-3 rtl:space-x-reverse absolute left-1/2 transform -translate-x-1/2"
+        >
+          <span
+            class="  <nav class="bg-black" id="navbar">
+      <div
+        class="max-w-screen-xl flex items-center justify-between p-4 mx-auto"
+      >
+        <!-- Left links -->
+        <div class="flex space-x-4 rtl:space-x-reverse">
+          <ul class="flex space-x-4 rtl:space-x-reverse">
+            <li>
+              <a
+                href="./index.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                aria-current="page"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="./register.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Register</a
+              >
+            </li>
+            <li>
+              <a
+                href="./about.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href="./account.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Account</a
+              >
+            </li>
+            <li>
+              <a
+                href="./categories.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Categories</a
+              >
+            </li>
+            <li>
+              <a
+                href="./contact us.html"
+                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 md:text-white"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+"
+          >
+            <i class="fa-solid fa-gem text-white"></i>
+            Luxury
+          </span>
+        </a>
+
+        <!-- Right icons (Cart, Search, etc.) -->
+        <div class="flex items-center space-x-3 rtl:space-x-reverse">
+          <i class="fa-solid fa-magnifying-glass text-white searchIcon"></i>
+          <i
+            class="fa-solid fa-cart-shopping cartIcon"
+            onclick="window.location.href='cart.html'"
+          ></i>
+          <a href="./fav.html">
+            <i class="fa-solid fa-heart text-white"></i>
+          </a>
+          <a href="login.html" class="text-white login"></a>
+        </div>
+
+        <!-- search div -->
+        <div class="searchContainer">
+          <div class="search_logo">
+            <h1>Welcome in Luxury Search Engine</h1>
+          </div>
+          <div class="search_content">
+            <input type="text" class="searchInput" placeholder="Search..." />
+            <button
+              type="button"
+              class="lg:w-24 text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-4 focus:ring-gray-300 font-medium text-sm px-5 py-4 me-2 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-700 dark:border-gray-700"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Jewelry Categories</h1>
+
+    <div class="categories">
+      <button class="dropdown" onclick="toggleCategory('earrings')">
+        Earrings
+      </button>
+      <div class="panel" id="earrings">
+        <p>Diamond Studs</p>
+        <p>Gold Hoops</p>
+        <p>Pearl Drops</p>
+        <p>Silver Ear Cuffs</p>
+        <p>Gemstone Earrings</p>
+        <p>Minimalist Studs</p>
+        <p>Floral Earrings</p>
+        <p>Dangling Crystals</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('rings')">Rings</button>
+      <div class="panel" id="rings">
+        <p>Gold Ring</p>
+        <p>Diamond Ring</p>
+        <p>Silver Ring</p>
+        <p>Engagement Ring</p>
+        <p>Vintage Ring</p>
+        <p>Stackable Rings</p>
+        <p>Emerald Ring</p>
+        <p>Twisted Band</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('necklaces')">
+        Necklaces
+      </button>
+      <div class="panel" id="necklaces">
+        <p>Gold Chain</p>
+        <p>Pendant Necklace</p>
+        <p>Pearl Necklace</p>
+        <p>Layered Necklace</p>
+        <p>Heart Locket</p>
+        <p>Name Necklace</p>
+        <p>Choker</p>
+        <p>Infinity Pendant</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('bracelets')">
+        Bracelets
+      </button>
+      <div class="panel" id="bracelets">
+        <p>Gold Bangle</p>
+        <p>Charm Bracelet</p>
+        <p>Cuff Bracelet</p>
+        <p>Beaded Bracelet</p>
+        <p>Friendship Bracelet</p>
+        <p>Tennis Bracelet</p>
+        <p>Pearl Bracelet</p>
+        <p>Leather Strap</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('anklets')">
+        Anklets
+      </button>
+      <div class="panel" id="anklets">
+        <p>Silver Anklet</p>
+        <p>Beaded Anklet</p>
+        <p>Charm Anklet</p>
+        <p>Shell Anklet</p>
+        <p>Minimalist Anklet</p>
+        <p>Gold Chain Anklet</p>
+        <p>Double Layer Anklet</p>
+        <p>Crystal Anklet</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('brooches')">
+        Brooches
+      </button>
+      <div class="panel" id="brooches">
+        <p>Floral Brooch</p>
+        <p>Crystal Brooch</p>
+        <p>Vintage Brooch</p>
+        <p>Butterfly Pin</p>
+        <p>Pearl Brooch</p>
+        <p>Ribbon Brooch</p>
+        <p>Gold Leaf Brooch</p>
+        <p>Heart Brooch</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('pendants')">
+        Pendants
+      </button>
+      <div class="panel" id="pendants">
+        <p>Heart Pendant</p>
+        <p>Cross Pendant</p>
+        <p>Star Pendant</p>
+        <p>Gemstone Pendant</p>
+        <p>Initial Pendant</p>
+        <p>Teardrop Pendant</p>
+        <p>Leaf Pendant</p>
+        <p>Butterfly Pendant</p>
+      </div>
+
+      <button class="dropdown" onclick="toggleCategory('sets')">Sets</button>
+      <div class="panel" id="sets">
+        <p>Earring & Necklace Set</p>
+        <p>Bridal Jewelry Set</p>
+        <p>Ring & Bracelet Set</p>
+        <p>Full Gold Set</p>
+        <p>Pearl Set</p>
+        <p>Crystal Set</p>
+        <p>Traditional Set</p>
+        <p>Modern Jewelry Set</p>
+      </div>
+    </div>
+
+    <script src="./JS/categories.js"></script>
+    <script src="./JS/app.js"></script>
+    <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.min.js"></script>
+  </body>
+</html>

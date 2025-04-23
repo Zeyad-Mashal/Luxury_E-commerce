@@ -1,0 +1,45 @@
+.shop {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.shop h1 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: goldenrod;
+  font-weight: bold;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+}
+.shop p {
+  color: #666;
+  font-weight: bold;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 2rem;
+}
+.shop_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.shop_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.buy-btn {
+  z-index: 999;
+}
+@media screen and (max-width: 589px) {
+  .shop p {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}

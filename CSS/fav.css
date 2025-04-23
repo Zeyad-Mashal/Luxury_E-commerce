@@ -1,0 +1,142 @@
+.fav {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 2rem 0;
+}
+.fav h2 {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: goldenrod;
+  font-weight: bold;
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: 700;
+}
+.fav p {
+  color: #666;
+  font-weight: bold;
+  font-family: "Qwitcher Grypen", cursive;
+  font-size: 2rem;
+  margin: 0;
+}
+.fav_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+.fav_list {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 0 5rem;
+}
+.fav_item {
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 4px 4px 10px #aaa;
+  height: 150px;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+.fav_item:hover {
+  box-shadow: 4px 4px 20px #aaa;
+  transform: translateY(-5px);
+}
+.fav_item img {
+  width: 150px;
+  height: 150px;
+}
+.item_content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 2rem;
+}
+.item_content h3 {
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+  margin: 0 0 2rem 0;
+}
+.item_content span {
+  font-size: 1.2rem;
+  color: goldenrod;
+  font-weight: bold;
+}
+.fav_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.fav_icon i {
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.fav_icon i.remove-favorite {
+  color: #8a0303;
+}
+.fav_icon i.remove-favorite:hover {
+  transform: scale(1.2);
+}
+.fav_icon i.add-to-cart:hover {
+  color: goldenrod;
+  transform: scale(1.2);
+}
+
+.empty-favorites {
+  width: 100%;
+  text-align: center;
+  padding: 3rem 0;
+}
+.empty-favorites i {
+  font-size: 5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+.empty-favorites h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+.empty-favorites p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.toast {
+  position: fixed;
+  top: 70px;
+  right: 5px;
+  background-color: #333;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1000;
+}
+.toast.show {
+  opacity: 1;
+}
+.toast i {
+  color: #4caf50;
+}

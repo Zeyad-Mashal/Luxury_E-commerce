@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./CSS/login.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="animated-background"></div>
+
+    <div class="login-container">
+      <div class="login-card">
+        <h1 class="title-animated">LogIn</h1>
+
+        <div class="success-message" id="successMessage">
+          <i class="fas fa-check-circle"></i>
+          <p>Login successful!</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <div class="form-group">
+            <label for="username" class="label-animated"
+              >Username or Email</label
+            >
+            <div class="input-with-icon">
+              <input
+                type="text"
+                id="username"
+                name="username"
+                placeholder="Enter your username or email"
+              />
+              <i class="fas fa-user icon-large animated-icon"></i>
+            </div>
+            <div class="error-message" id="usernameError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Invalid username or email</span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="password" class="label-animated">Password</label>
+            <div class="input-with-icon">
+              <input
+                type="password"
+                id="password"
+                name="password"
+                placeholder="Enter your password"
+              />
+              <i
+                class="fas fa-eye-slash toggle-password"
+                id="togglePassword"
+              ></i>
+              <i class="fas fa-lock icon-large"></i>
+            </div>
+            <div class="error-message" id="passwordError">
+              <i class="fas fa-exclamation-circle"></i>
+              <span> Invalid Password </span>
+            </div>
+            <div class="error-message" id="passwordError2">
+              <i class="fas fa-exclamation-circle"></i>
+              <span>Password must be at least 8 characters</span>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">
+            <span>Login</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </form>
+
+        <div class="signup-link">
+          Don't have an account?
+          <a href="./register.html" class="link-animated">Register</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="./JS/login.js"></script>
+  </body>
+</html>
